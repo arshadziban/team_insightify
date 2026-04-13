@@ -1,9 +1,9 @@
 <div align="center">
   <img src="logo.svg" alt="Insightify Logo" width="200" />
   
-  **Analyzing Screen Time Impact on Mental Health & Well-being**
+  **Analyzing Screen Time Impact on Physical & Mental Health & Well-being**
   
-  A comprehensive data analysis project examining the relationship between digital device usage and psychological health outcomes in adolescents.
+  A comprehensive data analysis project examining the relationship between digital device usage and physical and psychological health outcomes in adolescents.
 </div>
 
 ## Team Members
@@ -15,15 +15,17 @@
 
 ## Project Overview
 
-Insightify is a data-driven research initiative that investigates the multifaceted impact of screen time on mental health and overall well-being. Through rigorous statistical analysis and data visualization, this project provides insights into behavioral patterns, depression indicators, sleep quality, and physical health metrics in relation to digital media consumption.
+Insightify is a data-driven research initiative that investigates the multifaceted impact of screen time on both physical and mental health and overall well-being. Through rigorous statistical analysis and data visualization, this project provides insights into behavioral patterns, depression indicators, sleep quality, physical health metrics (BMI, physical problems), and health-related behaviors in relation to digital media consumption.
 
 ### Key Objectives
 
-- Analyze correlations between daily screen time and mental health indicators
+- Analyze correlations between daily screen time and both mental and physical health indicators
 - Categorize depression severity levels using PHQ-9 assessment scores
-- Evaluate sleep patterns and their relationship with device usage
+- Evaluate physical health metrics (BMI, weight classification) and their relationship with screen usage
+- Assess sleep patterns and their relationship with device usage
 - Examine demographic and socioeconomic factors influencing screen habits
-- Generate actionable insights for health interventions
+- Investigate mood, anxiety, and behavioral changes related to screen time
+- Generate actionable insights for comprehensive health interventions
 
 ## Features
 
@@ -45,8 +47,9 @@ Insightify is a data-driven research initiative that investigates the multifacet
 
 **Data Visualization**
 - Income distribution charts
-- Mental health trend analysis
+- Physical and mental health trend analysis
 - Demographic breakdowns
+- BMI and weight classification visualizations
 
 ## Dataset
 
@@ -170,9 +173,11 @@ income_class → [Low (≤150K), Middle (150-300K), High (>300K)]
 
 The analysis reveals important relationships between:
 - **Screen time patterns** and depression severity levels
+- **Physical health metrics** (BMI, weight) and device usage habits
 - **Sleep quality** and device usage habits
 - **Socioeconomic factors** and digital consumption
 - **Academic performance** and screen dependency
+- **Appetite and eating habits** in relation to screen time
 
 ## Output Reports
 

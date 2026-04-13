@@ -1,5 +1,3 @@
-# Insightify
-
 <div align="center">
   <img src="logo.svg" alt="Insightify Logo" width="200" />
   

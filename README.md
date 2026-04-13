@@ -7,7 +7,7 @@
 </div>
 
 ## Team Members
-
+- **Arshad Rahman Ziban**
 - **Nishat Tasnim**
 - **Ayesha Muni**
 

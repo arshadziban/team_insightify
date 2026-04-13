@@ -8,16 +8,12 @@
   A comprehensive data analysis project examining the relationship between digital device usage and psychological health outcomes in adolescents.
 </div>
 
----
-
 ## Team Members
 
 - **Nishat Tasnim**
 - **Ayesha Muni**
 
 *Final Year Design Project*
-
----
 
 ## Project Overview
 
@@ -30,8 +26,6 @@ Insightify is a data-driven research initiative that investigates the multifacet
 - Evaluate sleep patterns and their relationship with device usage
 - Examine demographic and socioeconomic factors influencing screen habits
 - Generate actionable insights for health interventions
-
----
 
 ## Features
 
@@ -56,8 +50,6 @@ Insightify is a data-driven research initiative that investigates the multifacet
 - Mental health trend analysis
 - Demographic breakdowns
 
----
-
 ## Dataset
 
 The project analyzes survey data from Google Sheets containing:
@@ -70,8 +62,6 @@ The project analyzes survey data from Google Sheets containing:
 - **Sleep Quality:** Sleep duration, bedtime, wake time, sleep medication
 - **Academic Impact:** Academic satisfaction, learning interest, screen impact on studies
 - **Behavioral Patterns:** Mobile phone habits, appetite changes, AI usage
-
----
 
 ## Getting Started
 
@@ -131,8 +121,6 @@ jupyter notebook thesis_25.ipynb
    - Uncomment Cells 45-46 for chi-square tests and PDF report generation
    - Requires adjusting the target variable and independent variables as needed
 
----
-
 ## Project Structure
 
 ```
@@ -146,8 +134,6 @@ team_insightify/
 ├── d1_daily_screen_report.html   # Generated analysis report (D1 daily screen time analysis)
 └── report/                        # Generated reports directory
 ```
-
----
 
 ## Analysis Workflow
 
@@ -182,8 +168,6 @@ income_class → [Low (≤150K), Middle (150-300K), High (>300K)]
 - Multiple comparison analysis
 - Can be activated by uncommenting relevant code cells
 
----
-
 ## Key Findings
 
 The analysis reveals important relationships between:
@@ -192,16 +176,12 @@ The analysis reveals important relationships between:
 - **Socioeconomic factors** and digital consumption
 - **Academic performance** and screen dependency
 
----
-
 ## Output Reports
 
 - **d1_daily_screen_report.html** - Interactive analysis report generated using the deep-study library, comparing daily screen time across demographic groups and providing statistical insights
 - **report/** - Directory containing additional generated analysis reports and outputs
 
 *Note: Dataset export and detailed statistical analysis tables are commented out in the notebook and can be activated as needed.*
-
----
 
 ## Technologies Used
 
@@ -213,8 +193,6 @@ The analysis reveals important relationships between:
 | **Gsheet-loader** | Google Sheets data integration |
 | **Jupyter** | Interactive analysis environment |
 | **Python-dotenv** | Environment variable management |
-
----
 
 ## Dependencies
 
@@ -229,16 +207,12 @@ All project dependencies are listed in `requirements.txt`:
 - numpy (via pandas/scikit-learn)
 - scipy (via scikit-learn)
 
----
-
 ## Security & Privacy
 
 - `.env` file is git-ignored to protect sensitive URLs
 - All personal identifiable information (PII) from surveys is anonymized
 - Data is processed locally and securely
 - No sensitive data is committed to version control
-
----
 
 ## Documentation
 
@@ -247,8 +221,6 @@ For detailed methodology and interpretation of results, refer to:
 - Generated HTML reports in the project root
 - Statistical test documentation and assumption checks
 
----
-
 ## Contributing
 
 This is a final year academic project. For contributions or questions:
@@ -256,13 +228,9 @@ This is a final year academic project. For contributions or questions:
 2. Review existing analysis code
 3. Propose methodological improvements via discussion
 
----
-
 ## License
 
 This project is for academic purposes as part of a university final year design project.
-
----
 
 ## Contact & Support
 
@@ -271,8 +239,6 @@ This project is for academic purposes as part of a university final year design 
 - Ayesha Muni
 
 For questions about the analysis or methodology, please reach out to the team members.
-
----
 
 <div align="center">
   <strong>Insightify:</strong> Understanding the Digital Age Impact on Well-being

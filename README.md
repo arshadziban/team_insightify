@@ -233,6 +233,7 @@ This project is for academic purposes as part of a university final year design 
 ## Contact & Support
 
 **Team Insightify**
+- Arshad Rahman Ziban
 - Nishat Tasnim
 - Ayesha Muni
 

@@ -22,3 +22,5 @@ venv/
 d1_daily_screen_report.html
 report/
 reports/
+*.csv
+*.xlsx

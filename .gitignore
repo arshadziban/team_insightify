@@ -21,6 +21,6 @@ venv/
 # Reports and generated outputs
 d1_daily_screen_report.html
 report/
-reports/
+report_v2/
 *.csv
 *.xlsx

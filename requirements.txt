@@ -1,5 +1,11 @@
 pandas
+numpy
+matplotlib
+seaborn
+scipy
 requests
 scikit-learn
 gsheet-loader
 python-dotenv
+jupyter
+ipython

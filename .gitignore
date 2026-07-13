@@ -25,6 +25,10 @@ report_v2/
 report_v2.2/
 report_v3/
 report_v4/
+report_v2.2/
 
 *.csv
 *.xlsx
+
+# Local scratch folder
+rest/

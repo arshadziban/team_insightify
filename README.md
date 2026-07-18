@@ -177,13 +177,6 @@ The analysis reveals important relationships between:
 - **Socioeconomic factors** and digital consumption
 - **Academic performance** and screen dependency
 
-## Output Reports
-
-- **d1_daily_screen_report.html** - Interactive analysis report generated using the deep-study library, comparing daily screen time across demographic groups and providing statistical insights
-- **report/** - Directory containing additional generated analysis reports and outputs
-
-*Note: Dataset export and detailed statistical analysis tables are commented out in the notebook and can be activated as needed.*
-
 ## Technologies Used
 
 | Technology | Purpose |

@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Pipeline at a Glance
 
-Notebooks run in numeric order; each reads the previous stage's CSV output. `outlier_detection.ipynb` is independent (loads its own data from Google Sheets) and can run any time.
+Notebooks run in numeric order; each reads the previous stage's CSV output.
 
 | # | Notebook | Reads | Writes | Purpose |
 |---|----------|-------|--------|---------|
@@ -29,7 +29,6 @@ Notebooks run in numeric order; each reads the previous stage's CSV output. `out
 | 4 | `4_mlr_st.ipynb` | `dataset_sig_st.csv` | `report_v3/*_st.pdf` | MLR: predict daily screen time |
 | 5 | `5_mlr_phq9.ipynb` | `dataset_sig_phq9.csv` | `report_v3/*_phq9.pdf` | MLR: predict PHQ-9 depression severity |
 | 6 | `6_analysis_for_mind_well.ipynb` | `dataset_v3.csv` | `report_v4/*.pdf` (16 files) | Expanded cross-tabs, 8 outcomes × physical/mental predictors |
-| – | `outlier_detection.ipynb` | Google Sheet (direct) | `report_v4/outlier_*.pdf` | IQR + Z-score outlier diagnostics |
 
 **Regenerate everything:** run 1 → 2 → 3, then 4/5/6 selectively.
 **New survey data:** update `GOOGLE_SHEET_URL`, re-run from notebook 1.
@@ -74,11 +73,6 @@ Notebooks run in numeric order; each reads the previous stage's CSV output. `out
 - Own local `analysis()` PDF generator (same pattern as notebook 2's, different variable pairs)
 - 16 PDFs to `report_v4/`
 
-### Outlier Detection (`outlier_detection.ipynb`)
-- Independent of the main pipeline — loads and cleans its own copy of the raw data
-- IQR (1.5×IQR fences) and Z-score (|z| > 3) methods for numeric columns; over/under-represented category detection for categorical columns
-- Outputs `report_v4/outlier_numeric.pdf`, `report_v4/outlier_categorical.pdf`
-
 ## Data Files
 
 | File | Source | Rows × Cols | Purpose |
@@ -96,9 +90,9 @@ Notebooks run in numeric order; each reads the previous stage's CSV output. `out
 | `report_v2/` | Notebook 2 | Cross-tabs vs. `D1_daily_screen`, 17 sections + `pvalue_significance_chart_v3.png` |
 | `report_v2.2/` | Notebook 2 | Cross-tabs vs. `PHQ_class`, 13 sections + `pvalue_significance_chart_depression_linear.*` |
 | `report_v3/` | Notebooks 4, 5 | Odds-ratio tables, MLR publication tables (`*_st.pdf`, `*_phq9.pdf`), feature-importance PNG |
-| `report_v4/` | Notebook 6, `outlier_detection.ipynb` | 16 expanded cross-tab PDFs + outlier diagnostics |
+| `report_v4/` | Notebook 6 | 16 expanded cross-tab PDFs |
 
-Report contents generally include: cross-tab tables with chi-square results, odds ratios with CIs, feature-importance visualizations, outlier diagnostics.
+Report contents generally include: cross-tab tables with chi-square results, odds ratios with CIs, feature-importance visualizations.
 
 ## Key Conventions
 
@@ -115,9 +109,9 @@ Report contents generally include: cross-tab tables with chi-square results, odd
 | Package | Purpose |
 |---------|---------|
 | pandas | Data manipulation |
-| numpy | Numeric ops (notebooks 4, 5, 6, outlier_detection) |
+| numpy | Numeric ops (notebooks 4, 5, 6) |
 | scikit-learn | Logistic regression, LabelEncoder |
-| scipy.stats | Chi-square tests, Z-score outliers |
+| scipy.stats | Chi-square tests |
 | statsmodels | MNLogit with p-values/CIs |
 | gsheet-loader | Google Sheets import |
 | python-dotenv | `.env` handling |
